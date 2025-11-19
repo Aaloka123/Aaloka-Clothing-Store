@@ -1,0 +1,39 @@
+[
+  {
+    "id": 1,
+    "img": "/img/Timg1.svg",
+    "name": "Marron Long Coat",
+    "price": 8000
+  },
+  {
+    "id": 2,
+    "img": "/img/Timg2.svg",
+    "name": "Marron Long Coat",
+    "price": 8000
+  },
+  {
+    "id": 3,
+    "img": "/img/Timg3.svg",
+    "name": "Marron Long Coat",
+    "price": 8000
+  },
+  {
+    "id": 4,
+    "img": "/img/Timg4.svg",
+    "name": "Marron Long Coat",
+    "price": 8000
+  },
+  {
+    "id": 5,
+    "img": "/img/Timg1.svg",
+
+    "name": "Marron Long Coat",
+    "price": 8000
+  },
+  {
+    "id": 6,
+    "img": "/img/Timg1.svg",
+    "name": "Marron Long Coat",
+    "price": 8000
+  }
+]
