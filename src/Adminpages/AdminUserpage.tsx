@@ -194,7 +194,7 @@ const AdminUserPage: React.FC = () => {
                             className="px-3 py-1 bg-primary text-white rounded hover:bg-[#5c1621] transition"
                             onClick={() => handleEditClick(user)}
                           >
-                            Edit
+                            Edit this
                           </button>
                           <Trash
                             className="cursor-pointer text-red-600 hover:text-red-800 transition"
