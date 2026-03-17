@@ -140,9 +140,6 @@ const Loginpage: React.FC = () => {
           <button className="hover:scale-105 transition transform">
             <img src={google} alt="Google Login" className="h-12 w-12" />
           </button>
-          <button className="hover:scale-105 transition transform">
-            <img src={facebbok} alt="Facebook Login" className="h-12 w-12" />
-          </button>
         </div>
       </div>
     </div>

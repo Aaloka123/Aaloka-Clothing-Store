@@ -6,54 +6,60 @@ import { X } from "lucide-react";
 
 const Accountpage = () => {
   return (
-    <div className="bg-secondaray">
-      <div className="flex justify-end items-start p-5 mt">
-        <NavLink to="/Home">
-          <X className="cursor-pointer" />
-        </NavLink>
-      </div>
+    <div className="min-h-screen w-full bg-[#FFF8F8] flex items-center justify-center px-4 relative">
+      <NavLink
+        to="/Home"
+        className="absolute top-6 right-6 z-20 p-2 bg-white/80 backdrop-blur rounded-full shadow-md hover:bg-white transition"
+      >
+        <X className="cursor-pointer text-gray-700" />
+      </NavLink>
 
-      <div className="flex items-center justify-center min-h-screen">
-        <div className="text-center">
-          <p className="font-blastula text-[40px] text-center mb-[20px]">
-            LOG IN
+      <div className="relative z-10 w-full max-w-xl rounded-3xl bg-white shadow-xl border border-gray-100 px-8 py-10 md:px-10 md:py-12">
+        <div className="text-center mb-8">
+          <p className="text-xs tracking-[0.35em] uppercase text-gray-500 mb-3">
+            Welcome to Aaloka
           </p>
-
-          <p className="mb-[50px]">
+          <h1 className="font-blastula text-4xl md:text-5xl text-gray-900 mb-3">
+            Log in
+          </h1>
+          <p className="text-sm text-gray-500">
             New to this site?{" "}
             <NavLink
               to="/Signup"
-              className="underline text-red-600 hover:text-red-800"
+              className="font-medium text-primary hover:text-[#5c1621] underline underline-offset-4"
             >
-              Signup
+              Sign up
             </NavLink>
           </p>
-
-          <div>
-            <p className="flex items-center gap-[20px] border-[1px] w-[450px] h-[55px] p-2 cursor-pointer hover:bg-gray-100 transition-all duration-200">
-              <img src={google} className="h-6 w-6 ml-4" />
-              Log in with Google
-            </p>
-          </div>
-
-          <div>
-            <p className="flex items-center gap-[20px]  w-[450px] h-[55px] p-2 bg-blue-600 text-white cursor-pointer hover:bg-blue-700 transition-all duration-200 mt-[40px]">
-              <img src={facebook} className="h-6 w-6 ml-4" />
-              Log in with Facebook
-            </p>
-          </div>
-
-          <div className="flex items-center my-6 w-[450px] mx-auto">
-            <hr className="flex-grow border-t border-gray-400" />
-            <span className="px-3 text-black">OR</span>
-            <hr className="flex-grow border-t border-gray-400" />
-          </div>
-          <NavLink to="/Loginpage">
-            <p className="flex items-center justify-center gap-[20px] border-[1px] w-[450px] h-[55px] p-2 cursor-pointer hover:bg-gray-100 transition-all duration-200 mt-[40px]">
-              Log in with Email
-            </p>
-          </NavLink>
         </div>
+
+        <div className="space-y-4">
+          <button className="flex items-center justify-center gap-3 border border-gray-200 rounded-xl w-full h-[52px] px-4 cursor-pointer bg-white shadow-sm hover:shadow-md hover:bg-gray-50 transition-all duration-200">
+            <img src={google} className="h-5 w-5" alt="Google" />
+            <span className="text-sm font-medium text-gray-700">
+              Continue with Google
+            </span>
+          </button>
+
+          <button className="flex items-center justify-center gap-3 border border-gray-200 rounded-xl w-full h-[52px] px-4 cursor-pointer bg-white shadow-sm hover:shadow-md hover:bg-gray-50 transition-all duration-200">
+            <img src={facebook} className="h-5 w-5" alt="Facebook" />
+            <span className="text-sm font-medium text-gray-700">
+              Continue with Facebook
+            </span>
+          </button>
+        </div>
+
+        <div className="flex items-center gap-3 text-xs text-gray-400 my-7">
+          <div className="h-px flex-1 bg-gray-200" />
+          <span>or continue with</span>
+          <div className="h-px flex-1 bg-gray-200" />
+        </div>
+
+        <NavLink to="/Loginpage">
+          <button className="w-full flex items-center justify-center gap-2 rounded-xl bg-primary text-white h-[52px] text-sm font-semibold tracking-wide shadow-sm hover:bg-[#5c1621] hover:shadow-md active:scale-[0.99] transition-all duration-200">
+            Continue with email
+          </button>
+        </NavLink>
       </div>
     </div>
   );
