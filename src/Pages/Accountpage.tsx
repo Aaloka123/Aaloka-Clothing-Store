@@ -1,7 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import google from "../assets/google.svg";
-import facebook from "../assets/facebook.svg";
 import { X } from "lucide-react";
 
 const Accountpage = () => {
@@ -38,13 +37,6 @@ const Accountpage = () => {
             <img src={google} className="h-5 w-5" alt="Google" />
             <span className="text-sm font-medium text-gray-700">
               Continue with Google
-            </span>
-          </button>
-
-          <button className="flex items-center justify-center gap-3 border border-gray-200 rounded-xl w-full h-[52px] px-4 cursor-pointer bg-white shadow-sm hover:shadow-md hover:bg-gray-50 transition-all duration-200">
-            <img src={facebook} className="h-5 w-5" alt="Facebook" />
-            <span className="text-sm font-medium text-gray-700">
-              Continue with Facebook
             </span>
           </button>
         </div>
