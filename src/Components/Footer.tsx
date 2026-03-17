@@ -10,7 +10,7 @@ const Footer = () => {
             Aaloka Store
           </h2>
           <p className="text-secondaray mt-2 max-w-full sm:max-w-xs text-sm sm:text-base">
-            Your one-stop shop for quality products at the best prices.
+            Your one-stop shop for quality products at the best.
           </p>
         </div>
 
